@@ -21,7 +21,7 @@ const news = [
 ];
 ---
 
-<Base title="Новости и кейсы — Политон" description="Новости, выполненные работы и проекты ООО «Политон».">
+<Base title="Новости и кейсы — РПК" description="Новости, выполненные работы и проекты ООО «РПК».">
     <PageHero kicker="Новости и кейсы" title="Работа компании по годам" lead="Собрали выполненные работы и новости со старого сайта в одном разделе." />
     <section class="section section-light"><div class="container"><div class="project-grid">{news.map(([date, title]) => <article class="project-card"><span class="project-date">{date}</span><h3>{title}</h3></article>)}</div></div></section>
 </Base>
