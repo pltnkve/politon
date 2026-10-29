@@ -63,6 +63,10 @@ img { display: block; max-width: 100%; }
 .button-row { display: flex; flex-wrap: wrap; gap: 12px; }
 .button-ghost { color: var(--accent-dark); background: transparent; border: 1px solid var(--accent); }
 .button-ghost:hover { color: #fff; background: var(--accent); }
+.project-gallery { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+.project-gallery img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; background: var(--surface); }
+.partner-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; }
+.partner-grid img { width: 100%; aspect-ratio: 1.8 / 1; object-fit: contain; padding: 14px; background: #fff; border: 1px solid var(--line); }
 .section-dark { background: var(--ink); color: #fff; }
 .error-page { min-height: 60vh; display: flex; align-items: center; }
 .error-page-content { max-width: 720px; }
@@ -157,6 +161,8 @@ img { display: block; max-width: 100%; }
     .section-heading { display: block; margin-bottom: 28px; }
     .section-heading h2 { margin-bottom: 18px; }
     .service-grid, .project-grid, .split, .contact-grid, .footer-grid { grid-template-columns: 1fr; }
+    .project-gallery { grid-template-columns: repeat(2, 1fr); }
+    .partner-grid { grid-template-columns: repeat(2, 1fr); }
     .service-card { min-height: 210px; }
     .page-hero { padding: 68px 0; }
     .content-grid { grid-template-columns: 1fr; }
