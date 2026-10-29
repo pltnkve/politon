@@ -44,6 +44,30 @@ img { display: block; max-width: 100%; }
 .hero-meta span { color: #cbd7dd; font-size: .82rem; }
 .section { padding: 100px 0; }
 .section-light { background: var(--white); }
+.section-dark { background: var(--ink); color: #fff; }
+.error-page { min-height: 60vh; display: flex; align-items: center; }
+.error-page-content { max-width: 720px; }
+.error-page h1 { max-width: 620px; margin: 0 0 24px; }
+.error-page p:not(.kicker) { max-width: 560px; color: rgba(255,255,255,.76); font-size: 18px; line-height: 1.6; margin: 0 0 32px; }
+.document-list { display: grid; gap: 0; padding: 0; list-style: none; }
+.document-list li { border-top: 1px solid var(--line); }
+.document-list li:last-child { border-bottom: 1px solid var(--line); }
+.document-list a { display: flex; justify-content: space-between; gap: 20px; padding: 16px 0; color: var(--ink); font-weight: 700; }
+.document-list a:hover { color: var(--accent-dark); }
+.document-list span { flex: 0 0 auto; color: var(--accent-dark); font-size: .75rem; letter-spacing: .08em; }
+.notice { padding: 18px 20px; color: var(--ink); background: #fff3f3; border-left: 3px solid var(--accent); }
+.requisites dl { display: grid; grid-template-columns: minmax(190px, .7fr) 1.3fr; gap: 0; margin: 28px 0 36px; }
+.requisites dt, .requisites dd { padding: 14px 0; border-top: 1px solid var(--line); }
+.requisites dt { color: var(--muted); font-weight: 700; }
+.requisites dd { margin: 0; }
+.button-row { display: flex; flex-wrap: wrap; gap: 12px; }
+.button-ghost { color: var(--accent-dark); background: transparent; border: 1px solid var(--accent); }
+.button-ghost:hover { color: #fff; background: var(--accent); }
+.section-dark { background: var(--ink); color: #fff; }
+.error-page { min-height: 60vh; display: flex; align-items: center; }
+.error-page-content { max-width: 720px; }
+.error-page h1 { max-width: 620px; margin: 0 0 24px; }
+.error-page p:not(.kicker) { max-width: 560px; color: rgba(255,255,255,.76); font-size: 18px; line-height: 1.6; margin: 0 0 32px; }
 .section-heading { display: flex; justify-content: space-between; align-items: end; gap: 28px; margin-bottom: 42px; }
 .section-heading h2 { max-width: 720px; margin: 0; font-size: clamp(2rem, 4vw, 3.5rem); line-height: 1.02; letter-spacing: -.045em; }
 .section-heading p { max-width: 420px; margin: 0; color: var(--muted); }
@@ -142,4 +166,7 @@ img { display: block; max-width: 100%; }
     .footer-grid { gap: 26px; }
     .footer-bottom { display: block; }
     .footer-bottom span { display: block; margin-top: 8px; }
+    .requisites dl { display: block; }
+    .requisites dt { padding-bottom: 4px; border-bottom: 0; }
+    .requisites dd { padding-top: 0; }
 }

@@ -1,0 +1,18 @@
+---
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/PageHero.astro';
+
+const letters = [
+    ['Благодарственное письмо от АО «НЛМК-Урал»', '/documents/thanks-nlmk-ural.pdf'],
+    ['Благодарственное письмо от АО «Катавский цемент»', '/documents/thanks-katav-cement.pdf'],
+    ['Благодарственное письмо от АО «ЕВРАЗ КГОК»', '/documents/thanks-evraz-kgok.pdf'],
+    ['Благодарственное письмо от АО «Невьянский машиностроительный завод»', '/documents/thanks-nevyansk-machinery.pdf'],
+    ['Благодарность от АО «Ураэлектромедь»', '/documents/thanks-uraelectromed.pdf'],
+    ['Благодарственное письмо от АО «Уралхиммаш»', '/documents/thanks-uralchimmash.pdf'],
+];
+---
+
+<Base title="Благодарственные письма — РПК" description="Благодарственные письма заказчиков ООО «РПК».">
+    <PageHero kicker="О компании / документы" title="Нас рекомендуют результаты работы" lead="Письма заказчиков перенесены со старого сайта и доступны для просмотра в формате PDF." />
+    <section class="section section-light"><div class="container prose"><ul class="document-list">{letters.map(([title, href]) => <li><a href={href}>{title} <span>PDF</span></a></li>)}</ul></div></section>
+</Base>
