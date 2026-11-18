@@ -26,3 +26,21 @@
         </div>
     </div>
 </header>
+
+<script>
+    const serviceMenus = document.querySelectorAll('details.nav-group');
+
+    document.addEventListener('click', (event) => {
+        const target = event.target;
+        if (!(target instanceof Node)) return;
+
+        serviceMenus.forEach((menu) => {
+            if (!menu.contains(target)) menu.open = false;
+        });
+    });
+
+    document.addEventListener('keydown', (event) => {
+        if (event.key !== 'Escape') return;
+        serviceMenus.forEach((menu) => { menu.open = false; });
+    });
+</script>
