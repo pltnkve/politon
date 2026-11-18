@@ -138,12 +138,12 @@ img { display: block; max-width: 100%; }
     .contact-cards { grid-template-columns: 1fr; }
 }
 @media (max-width: 680px) {
-    .container { width: min(calc(100% - 28px), var(--container)); }
-    .header-inner { display: block; min-height: 0; }
-    .header-top { display: flex; align-items: center; min-height: 82px; }
-    .brand img { width: 44px; height: 44px; }
+    .container { width: min(calc(100% - 40px), var(--container)); }
+    .header-inner { display: block; min-height: 0; padding: 6px 0 8px; }
+    .header-top { display: flex; align-items: center; min-height: 56px; }
+    .brand img { width: 36px; height: 36px; }
     .header-actions { display: none; }
-    .mobile-menu-button { display: flex; align-items: center; justify-content: flex-end; width: 24px; height: 44px; margin-left: auto; padding: 4px 0; color: var(--ink); cursor: pointer; }
+    .mobile-menu-button { display: flex; align-items: center; justify-content: flex-end; width: 24px; height: 36px; margin-left: auto; padding: 4px 0; color: var(--ink); cursor: pointer; }
     .menu-icon { display: grid; gap: 4px; width: 18px; }
     .menu-icon i { display: block; height: 2px; background: var(--accent); }
     .main-nav { display: none; width: 100%; margin: 8px 0 4px; padding: 8px 0 10px; border-top: 1px solid var(--line); font-size: .88rem; }
