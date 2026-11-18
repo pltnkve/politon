@@ -12,6 +12,7 @@ img { display: block; max-width: 100%; }
 .container { width: min(calc(100% - 40px), var(--container)); margin: 0 auto; }
 .site-header { position: relative; z-index: 10; background: rgba(255,255,255,.96); border-bottom: 1px solid var(--line); }
 .header-inner { display: flex; align-items: center; gap: 28px; min-height: 82px; }
+.header-top { display: contents; }
 .brand { flex: 0 0 auto; display: inline-flex; align-items: center; }
 .brand img { width: 52px; height: 52px; object-fit: contain; }
 .mobile-menu-toggle { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
@@ -138,13 +139,15 @@ img { display: block; max-width: 100%; }
 }
 @media (max-width: 680px) {
     .container { width: min(calc(100% - 28px), var(--container)); }
+    .header-inner { display: block; min-height: 0; }
+    .header-top { display: flex; align-items: center; min-height: 82px; }
     .brand img { width: 44px; height: 44px; }
     .header-actions { display: none; }
-    .mobile-menu-button { display: flex; order: 0; flex: 0 0 24px; align-items: center; justify-content: flex-end; width: 24px; margin-left: auto; padding: 4px 0; color: var(--ink); cursor: pointer; }
+    .mobile-menu-button { display: flex; align-items: center; justify-content: flex-end; width: 24px; height: 44px; margin-left: auto; padding: 4px 0; color: var(--ink); cursor: pointer; }
     .menu-icon { display: grid; gap: 4px; width: 18px; }
     .menu-icon i { display: block; height: 2px; background: var(--accent); }
-    .main-nav { display: none; order: 4; margin: 8px 0 4px; padding: 8px 0 10px; border-top: 1px solid var(--line); font-size: .88rem; }
-    .mobile-menu-toggle:checked ~ .main-nav { display: grid; grid-template-columns: 1fr; gap: 0; }
+    .main-nav { display: none; width: 100%; margin: 8px 0 4px; padding: 8px 0 10px; border-top: 1px solid var(--line); font-size: .88rem; }
+    .header-top:has(.mobile-menu-toggle:checked) + .main-nav { display: grid; grid-template-columns: 1fr; gap: 0; }
     .main-nav > a, .nav-group summary { min-width: 0; padding: 9px 0; }
     .nav-group { min-width: 0; }
     .nav-dropdown { position: static; min-width: 100%; margin-top: 4px; padding: 6px 0; box-shadow: none; }
