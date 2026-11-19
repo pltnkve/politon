@@ -5,5 +5,5 @@ import PageHero from '../components/PageHero.astro';
 
 <Base title="Вакансии — РПК" description="Вакансии ООО «РПК».">
     <PageHero kicker="О компании" title="Вакансии" lead="Присоединяйтесь к команде Русской Печной Компании." />
-    <section class="section section-light"><div class="container prose"><h2>Открытых вакансий сейчас нет</h2><p>Если вы хотите предложить сотрудничество, свяжитесь с компанией по контактным данным.</p><a class="button" href="/contacts/">Контакты</a></div></section>
+    <section class="section section-light"><div class="container prose"><h2>Открытых вакансий сейчас нет</h2><p>Если вы хотите предложить сотрудничество, свяжитесь с компанией по контактным данным.</p><a class="button" href={`${import.meta.env.BASE_URL}contacts/`}>Контакты</a></div></section>
 </Base>
